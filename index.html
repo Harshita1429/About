@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://kit.fontawesome.com/0038dd4693.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+	 .card{
+    box-shadow: 1px 40px 20px 2px #ECFFDC; 
+    margin:10px;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+}
+.card img{
+	width: 100%;
+}
+	.timeline {
+		width: 100%;
+	height: 20px;
+	list-style: none;
+	text-align: justify;
+	margin: 80px auto;
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, #4CBB17), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, #4CBB17 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+}
+.timeline:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+}
+.timeline li {
+	display: inline-block;
+	width: 18px;
+	height: 20px;
+	background: #4CBB17;
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+	border-radius: 50%;
+}
+.timeline li:before {
+	display: inline-block;
+	content: attr(data-year);
+	font-size: 18px;
+	position: absolute;
+	left: 10%;
+	transform: translateX(-50%);
+}
+.timeline li:nth-child(odd):before {
+	top: -40px;
+}
+.timeline li:nth-child(even):before {
+	bottom: -40px;
+}.timeline li:after {
+	display: inline-block;
+	content: attr(data-text);
+	font-size: 14px;
+	position: absolute;
+	left: -7px;
+	transform: translateX(-50%);
+}
+.timeline li:nth-child(odd):after {
+	bottom: 0;
+	margin-bottom: -10px;
+	transform: translate(-50%, 100%);
+}
+.timeline li:nth-child(even):after {
+	top: 0;
+	margin-top: -10px;
+	transform: translate(-50%, -100%);
+}
+.timeline li{
+	background-color: #4CBB17
+}
+.card-header{
+	background-color: transparent;
+	border: none;
+}
+@media screen and (max-width: 800px)
+{
+	h1{
+		font-size: 16px;
+	}
+	h2{
+		font-size: 14px;
+	}
+	h3{
+		font-size: 12px;
+	}
+	p{
+		font-size: 10px;
+	}
+	.card ul li{
+		font-size: 10px;
+	}
+	nav li{
+		font-size: 10px;
+	}
+	h5{
+		font-size: 12px;
+	}
+}
+</style>
+<body>
+<div container-fluid>
+	<nav class="navbar navbar-expand-sm w-100 navbar-light">
+		<div class="navbar-brand justify-content-center" style="width: 30%;"> 
+		<a href="#"><img src="logo.png" width="100%"></a>
+		</div>
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsenavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse text-center collapse" id="collapsenavbar" style="width: 100%">
+		<ul class="navbar-nav justify-content-center " id="three">
+			<li class="navbar-item mx-1 p-2">
+					<a href="#about" class="navbar-link text-dark text-decoration-none">Home</a></li>
+				<li class="navbar-item mx-1 p-2">
+					<a href="#about" class="navbar-link text-dark text-decoration-none">About</a></li>
+				<li class="navbar-item mx-1 p-2">
+                    <a href="#why" class="navbar-link text-dark text-decoration-none">YourWorld3</a></li>
+				<li class="navbar-item mx-1 p-2 ">
+				    <a href="#Tokenomics" class="navbar-link text-dark text-decoration-none">ICO</a></li>
+				<li class="navbar-item mx-1 p-2 ">
+					<a href="#Roadmap" class="navbar-link text-dark text-decoration-none">Green Swap</a></li>
+				<li class="navbar-item mx-1 p-2">
+					<a href="#Team" class="navbar-link text-dark text-decoration-none">NFt's</a></li>
+			    <li class="navbar-item mx-1 p-2">
+					<a href="#signup" class="navbar-link text-dark text-decoration-none ">Karbun</a>
+				</li>
+				<li class="navbar-item mx-1 p-2 ">
+					<a href="#Roadmap" class="navbar-link  text-dark text-decoration-none">Sovergin Coins</a>
+				</li>
+				<li class="navbar-item mx-1 p-2 ">
+					<a href="#Roadmap" class="navbar-link  text-dark text-decoration-none">Contact Us</a>
+				</li>
+			</ul>
+			<ul class=" nav navbar-nav"id="hey">
+			<li>
+				<button class="btn text-light shadow-lg mx-lg-5 p-1 px-3" style="background-color:#4CBB17; border-radius: 10px;">Login
+				</button>
+			</li>
+		</ul>
+		</div>
+	</nav>
+</div>
+<div class="container text-center mt-5 justify-content-center">
+	<h1 class="font-weight-bold">About Us</h1>
+    <h5 class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
+</div>
+<div class="container-fluid">
+<div class="row mt-5 justify-content-center">
+	<div class="col-md-5 col-12">
+		<img src="img.png" width="100%" height="100%">
+	</div>
+<div class="col-md-6 col-12 mt-5">
+	<h2 style="color: #4CBB17;font-weight: bold;">Our Story<hr style="margin-top: -18px;width: 40%;margin-left: 150px;height: 1px" color="#4CBB17"></h2>
+	<h1 class="font-weight-bold mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+	<p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</div>
+</div>
+<div class="container-fluid mt-5">
+<div class="row mt-4" id="new">
+<div class="col-md-4 col-12">
+<div class="card" style="height: 100%">
+<h2 style="color: #4CBB17;font-weight: bold; box-shadow: #4CBB17">Platform Assets</h2>
+<ul>
+	<li>YourWorlds Fellows</li>
+	<li>YourWorlds Metaverse</li>
+	<li>YourWorlds Gaming</li>
+	<li>YourWorlds Festival Series</li>
+	<li>YourWorlds Future</li>
+</ul>
+</div>	
+</div>
+<div class="col-md-4 col-12">
+<div class="card" style="height: 100%">
+<h2 style="color: #4CBB17;font-weight: bold;">Patnership Network</h2>
+<ul>
+	<li>Influencers & Ambassadors</li>
+	<li>Global Rightsholder</li>
+	<li>IMAX</li>
+	<li>Social Channels</li>
+	<li>Metaverse platforms</li>
+	<li>F1 Channels</li>
+	<ul>
+		<li style="list-style-type: circle;">F1 Festival Series</li>
+		<li style="list-style-type: circle;">F1 Guestlist</li>
+	</ul>
+</ul>
+</div>	
+</div>
+<div class="col-md-4 col-12">
+<div class="card" style="height: 100%">
+<h2 style="color: #4CBB17;font-weight: bold;">Branded Content</h2>
+<ul>
+	<li>YourWorld Metaverse Content</li>
+	<li>YourWorld Festival Content</li>
+	<li>YourWorld Futures Content</li>
+	<li>YourWorld Follows Content</li>
+</ul>
+</div>	
+</div>
+</div>
+</div>
+</div>
+<div class="container mt-5 text-center">
+<h1 style="font-weight: bold;">Our Journey</h1>
+<h5 style="font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
+</div>
+<div class="container-fluid">
+	<ul class="timeline" style="margin-top: 200px;">
+		<li data-year="Event 01" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
+		<li data-year="Event 02" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
+		<li data-year="Event 03" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
+		<li data-year="Event 04" data-text="Lorem ipsum dolor sit amet, consectetur."></li>
+	</ul>
+	<div class="text-center" style="margin-top: 150px;">
+	<h1 style="font-weight: bold;">The Team</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	<div class="row mt-5">
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">John Deo</h2>
+			</div>
+				<h3>Directore</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">Maria Felipe</h2>
+			</div>
+				<h3>Design Head</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">Jake Nackos</h2>
+			</div>
+				<h3>Technical Head</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">Mark Farias</h2>
+			</div>
+				<h3>Marketing Head</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">Advert Leu</h2>
+			</div>
+				<h3>Sales</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">Michael</h2>
+			</div>
+				<h3>Social Media Manager</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">Austin Wade</h2>
+			</div>
+				<h3>Data Engineer</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+		<div class="col-md-3 col-6">
+			<div class="card">
+				<div class="card-header">
+				<img src="pass.png">
+				<h2 style="color: #4CBB17">Robert Godwin</h2>
+			</div>
+				<h3>Copywriter</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>	
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
