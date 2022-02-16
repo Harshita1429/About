@@ -13,7 +13,28 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-	 .card{
+nav li::after {
+  background-color: #4CBB17;
+  content: "";
+  width: ;
+  height: 3px;
+  left: 0;
+  right: 5;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+nav li:hover::after {
+  width: 100%;
+}
+ nav li{
+	overflow: hidden;
+	position: relative;
+}
+::placeholder{
+color: #4CBB17
+}
+.card{
     box-shadow: 1px 40px 20px 2px #ECFFDC; 
     margin:10px;
     padding: 10px;
@@ -22,6 +43,9 @@
 }
 .card img{
 	width: 100%;
+}
+#last button{
+	 background-color: #4CBB17; padding: 5px; border-radius: 7px;border:none;color: white;margin-left: -100px;
 }
 	.timeline {
 		width: 100%;
@@ -85,28 +109,67 @@
 	background-color: transparent;
 	border: none;
 }
+#last{
+	background-image: url('bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+footer ul{
+	list-style: none;
+}
+footer li a{
+	    color: black;
+   		text-decoration: none;
+        padding: 0;
+   	}
+@media screen and (max-width: 450px)
+{
+	#last input{
+		font-size: 10px;
+	}
+	#last button{
+		font-size: 10px;
+		margin-left: -70px;
+	}
+	footer li a{
+		font-size: 10px;
+	}
+	.footer-list{
+		text-align: center;
+	}
+	#two {
+		justify-content: center;
+	}
+}
 @media screen and (max-width: 800px)
 {
 	h1{
-		font-size: 16px;
+		font-size: 20px;
 	}
 	h2{
 		font-size: 14px;
 	}
 	h3{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	p{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.card ul li{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	nav li{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	h5{
+		font-size: 14px;
+	}
+	footer li a{
 		font-size: 12px;
+	}
+	h4{
+		font-size: 14px;
 	}
 }
 </style>
@@ -144,10 +207,8 @@
 				</li>
 			</ul>
 			<ul class=" nav navbar-nav"id="hey">
-			<li>
 				<button class="btn text-light shadow-lg mx-lg-5 p-1 px-3" style="background-color:#4CBB17; border-radius: 10px;">Login
 				</button>
-			</li>
 		</ul>
 		</div>
 	</nav>
@@ -310,6 +371,74 @@
 		</div>
 	</div>
 </div>
+<div class="text-center text-light" id="last">
+	<div class="container">
+	<h1 class="mt-5 p-5 font-weight-bold">Join the Movement with YourWorld3</h1>
+	<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	<div class="buttoninside mt-5 p-3">
+    <input placeholder="Enter your Email here" style="color: #4CBB17;width: 80%;padding: 10px;border-radius: 10px;border: none">
+    <button>Contact us</button>
+    </div>
+</div>
+</div>
 </div>
 </body>
+<footer class="mt-5 text-dark">
+	<div class="container-fluid">
+	<div class="row">	
+	<div class="col-md-3 col-12 footer-list">
+		<img src="logo.png">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum is simply dummy text.</p>
+	</div>
+	<div class="col-md-3 col-12 footer-list">
+		<h4 class="mt-2 font-weight-bold">Quick Links</h4>
+		<ul style="margin-left: -40px;">
+			<li class="my-3"><a href="#">About us</a></li>
+			<li class="my-3"><a href="#">Our Mission</a></li>
+			<li class="my-3"><a href="#">Solution</a></li>
+			<li class="my-3"><a href="#">Services</a></li>
+			<li class="my-3"><a href="#">Our Projects</a></li>
+		</ul>
+	</div>
+	<div class="col-md-3 col-12 footer-list" id="more">
+		<h4 class="mt-2 font-weight-bold">Services</h4>
+		<ul style="margin-left: -40px;">
+			<li class="my-3"><a href="#">NFT Marketplace</a></li>
+			<li class="my-3"><a href="#">Centralized Exchange</a></li>
+			<li class="my-3"><a href="#">Decentralized Exchange</a></li>
+			<li class="my-3"><a href="#">Blochchain Based Certification</a></li>
+		</ul>
+	</div>
+	<div class="col-md-3 col-12 footer-list">
+		<h4 class="mt-2 font-weight-bold">Stay up to date</h4>
+		<p>Stay update with CarbExch's news, zero spam we promise</p>
+        <div class="d-flex" id="two">
+	    <div class="social ">
+					<a href="#" target="_blank" class=" text-decoration-none text-dark">
+            <i class="fa fa-twitter" aria-hidden="true" style="font-size: 20px;"></i>
+        </a>
+	    </div>
+	    <div class="social mx-3">
+					<a href="#" target="_blank" class=" text-decoration-none text-dark">
+            <i class="fa fa-instagram" aria-hidden="true" style="font-size: 20px;"></i>
+        </a>
+	    </div>
+	    <div class="social mx-2">
+					<a href="#" target="_blank" class=" text-decoration-none text-dark">
+            <i class="fa fa-youtube" aria-hidden="true" style="font-size: 20px;"></i>
+        </a>
+	    </div>
+</div>
+	</div>
+<div class="col-md-6  col-6 my-3">
+	<p>2022<span style="font-weight: bold;">YourWorld3</span>.All rights reserved</p>
+</div>
+<div class="col-md-6 col-6" id="oo">
+	<ul style="float: right;">
+		<li style=" display: inline-block; margin:3px;border-right: 2px solid black;"><a href="#">Terms & Condition &nbsp;</a></li>
+        <li style=" display: inline-block; margin:3px;"><a href="#">Privacy Policy</a></li>
+	</ul>
+</div>
+</div>
+</footer>
 </html>
